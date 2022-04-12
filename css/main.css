@@ -246,7 +246,7 @@ ul {
 }
 .collab {
   color: #fff;
-  position: absolute;
+  position: fixed;
   bottom: 40px;
   left: 40px;
   z-index: 1;
@@ -271,7 +271,7 @@ ul {
   color: #444;
   padding: 10px 10px 10px 40px;
   overflow: hidden;
-  transition: width .2s, padding .2s;
+  transition: height .2s, padding .2s;
 }
 .collab .popup::after {
   content: '<';
@@ -294,6 +294,30 @@ ul {
 }
 .collab .popup.active::after {
   content: '>';
+}
+
+/* Blurb */
+.collab .popup.vertical {
+  width: 300px;
+  height: 200px;
+  bottom: 0;
+  top: auto;
+  padding: 20px;
+}
+.collab .popup.active.vertical {
+  width: 300px;
+  height: 0;
+  padding: 20px;
+}
+.collab .popup.vertical::after {
+  content: '⌃';
+  left: calc(50% - 15px);
+  top: auto;
+  bottom: 0;
+}
+.collab .popup.active.vertical::after {
+  transform: rotate(180deg);
+  transform-origin: center;
 }
 
 .tea-container {
