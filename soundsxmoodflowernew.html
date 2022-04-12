@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Moodflower - About</title>
+  <title>moodflower - About</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,21 +11,13 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
   <style type="text/css">
     a {
       color: #FA5300;
-    }
-    @media only screen and (max-width: 600px) {
-      .sidebar {
-        background-color: white; /* Mobile navbar background */
-      }
-      .currentsky {
-        margin: 0 !important;
-      }
     }
   </style>
 </head>
@@ -39,13 +31,13 @@
   <!-- Background -->
   <div class="content">
 
-    <div class="sidebar"> <!-- Nav bar background color -->
-      <a class="logo hide-on-desktop" href="../index.html">
+    <div class="sidebar">
+      <a class="logo hide-on-desktop" href="index.html">
         moodflower
-        <img src="../img/moodflower-banner.png" alt=""> <!-- Flower in logo -->
+        <img src="img/moodflower-banner.png" alt=""> <!-- Flower in logo -->
       </a>
-      <a class="logo hide-on-mobile" href="../index.html">
-        <img src="../img/moodflowerlogo1.png" alt="">
+      <a class="logo hide-on-mobile" href="index.html">
+        <img src="img/moodflowerlogo1.png" alt="">
       </a>
       <a class="mobile-menu-btn" href="#!">
         <svg height="32" width="32" viewBox="0 0 64 64">
@@ -59,44 +51,84 @@
       <ul class="nav-wrapper">
         <div class="category">herbal tea</div>
         <ul>
-          <li><a href="../currentblends.html">current blends</a></li>
-          <li><a href="../soundsxmoodflowernew.html">sounds X moodflower</a></li>
+          <li><a href="currentblends.html">current blends</a></li>
+          <li><a href="soundsxmoodflowernew.html">sounds X moodflower</a></li>
           <li><a href="stockists.html">stockists</a></li>
         </ul>
         <div class="category">astrology</div>
         <ul>
-          <li><a href="readings.html">readings</a></li>
-          <li><a href="resources.html">resources</a></li>
-         <!-- <li><a href="currentsky.html">current sky</a></li> -->
+          <li><a href="astrology/readings.html">readings</a></li>
+          <li>writing</li>
+          <li><a href="astrology/resources.html">resources</a></li>
+          <li><a href="astrology/currentsky.html">current sky</a></li>
         </ul>
-        <div class="category"><a href="../about.html">about</a></div>
+        <div class="category"><a href="about.html">about</a></div>
       </ul>
     </div>
 
-    <div style="margin: 0 10%">
-      <p><img src="img/tealMG_3124.jpg" alt=""></p>
-      <p>A list of astrological resources for those who are interested in doing their own research.</p>
-      <u>Helpful Tables</u>
-        <br><a href="https://www.astro.com/swisseph/ae/2000/ae_2022.pdf">Astrodienst 2022 Swiss Ephemeris</a>
-        <br><a href="https://cafeastrology.com/asteroid-ephemeris-2022.html">Cafe Astrology 2022 Asteroid Ephemeris</a>
-        <br><a href="https://www.astrologybyjudithryan.com/2022-void-of-course-moon-cale">Judith Aurora Ryan 2022 Moon Void of Course Calendar</a>
-      <!--<br> <br><u>Booklist</u>
-        <br>Saturn: A New Look at an Old Devil by Liz Greene
-        <br>The Astrology of Fate by Liz Greene
-        <br>The Yod Book by Karen Hamaker-Zondag
-        <br>The Twelfth House by Karen Hamaker-Zondag
-        <br>The Rising Sign by Jeanne Avery
-        <br>Astrology for the Soul by Jan Spiller
-        <br>Asteroid Goddesses by Demetra George
-      <br><br> <u>Good Blogs</u>
-        <br><a href="https://theinnerwheel.com/about-this-site-the-inner-wheel/">The Inner Wheel (Dawn Bodrogi)</a>
-        <br><a href="https://www.leahwhitehorse.com"> LUA Astrology (Leah Whitehorse) </a>
-        <br><a href="https://theinnerwheel.com/about-this-site-the-inner-wheel/">Pandora Astrology (Jamie Kahl Miller)</a>
-        <br>
-        <br>
-        <br>-->
+    <div style="margin: 100px 10% 0 0; flex: 1;">
+      <div>
+        <div class="tea-container">
+          <div class="image-container">
+            <img class="crossfade" src="img/relaunch/calm_tea_new_2789.jpg" alt="">
+            <img src="img/relaunch/teaIMG_3084.jpg" alt="">
+          </div>
+          <div class="tea-info">
+            <div class="title">Calm Tea, $26</div>
+          </div>
+          <a class="buy-button" href="https://shopsounds.nyc/collections/by-sounds/products/calm-tea-1" target="_blank">Buy</a>
+          <p style="font-size: 14px;">Ingredients: Elderflower*, Lemon Balm*, Hibiscus Flower*, Chamomile*, Skullcap*, Lavender* (*Certified Organic)</p>
+        </div>
+        <div class="tea-container">
+          <div class="image-container">
+            <img class="crossfade" src="img/relaunch/freeenergy_tea_new__2787.jpg" alt="">
+            <img src="img/relaunch/teaIMG_3121.jpg" alt="">
+          </div>
+          <div class="tea-info">
+            <div class="title">Free Energy Tea, $26</div>
+          </div>
+          <a class="buy-button" href="https://shopsounds.nyc/collections/by-sounds/products/free-energy-tea-1" target="_blank">Buy</a>
+          <p style="font-size: 14px;">Ingredients: Ginger*, Grapefruit Peel*, Holy Basil (Tulsi Rama)*, Turmeric*, Schisandra Berry*, Safflower* (*Certified Organic)</p>
+        </div>
+      </div>
+      <div>
+        <div class="tea-container">
+          <div class="image-container">
+            <img class="crossfade" src="img/relaunch/goodmood_tea_new__2788.jpg" alt="">
+            <img src="img/relaunch/tea_10500016.jpg" alt="">
+          </div>
+          <div class="tea-info">
+            <div class="title">Good Mood Tea, $26</div>
+          </div>
+          <a class="buy-button" href="https://shopsounds.nyc/collections/by-sounds/products/good-mood-tea-1" target="_blank">Buy</a>
+          <p style="font-size: 14px;">Ingredients: St. John's Wort*, Damiana*, Rose Buds*, Oatstraw*, Holy Basil (Tulsi Rama)*, Lemon Balm*, Mugwort*, Motherwort* (*Certified Organic)</p>
+        </div>
+        <div class="tea-container">
+          <div class="image-container">
+            <img class="crossfade" src="img/relaunch/mentalclarity_tea_new__2786.jpg" alt="">
+            <img src="img/relaunch/teaIMG_3043.jpg" alt="">
+          </div>
+          <div class="tea-info">
+            <div class="title">Mental Clarity Tea, $26</div>
+          </div>
+          <a class="buy-button" href="https://shopsounds.nyc/collections/by-sounds/products/mental-clarity-tea-1" target="_blank">Buy</a>
+          <p style="font-size: 14px;">Ingredients: Cinammon*, Honeybush*, Ginkgo Biloba Leaf*, Gotu Kola*, Rosemary*, Cornflower*, Mugwort* (*Certified Organic)</p>
+        </div>
+      </div>
+      <!-- <p>Coming Soon
+        <br> <a href="mailto:moodflowerherbs@gmail.com" target="_top">moodflowerherbs@gmail.com</a>
+      </p> -->
 
-
+      <div class="collab">
+      distributed by <br>
+      <a href="https://shopsounds.nyc/collections/health">sounds
+        <svg width="30" viewBox="0 0 55.1 60"><defs><style>.logo-path{fill:var(--cr-blue-ikk);fill-rule:evenodd}</style></defs><g><path class="logo-path" d="M28.22 60c-9.56.32-18.22-5.77-22.37-15.33a31.43 31.43 0 0 1-2-6.32c-.41-2-.52-4-2.62-5.4s-1.41-5.08.72-6.35a3.34 3.34 0 0 0 1.68-2.66c1.58-8.43 5.2-15.68 12.51-20.48C26-3 39-.17 46.13 9.73a32.38 32.38 0 0 1 6 15.87 2.24 2.24 0 0 0 1.14 1.95c2.42 1.55 2.47 5.33 0 6.67a3 3 0 0 0-1.52 2.5C49.91 46.07 46.9 53.25 36.81 58a18.29 18.29 0 0 1-8.59 2"></path><path d="M50.2 32.22a27 27 0 0 1-10.08 21.13c-8 6.28-19 5.43-26.71-2C2.24 40.67 2 20.79 13 10c9.4-9.37 23.68-8.17 31.6 2.58 4 5.45 5.57 10.83 5.61 19.64" fill="#fefefe" fill-rule="evenodd"></path><path class="logo-path" d="M29.36 48.91c-5.81-.59-10.77-2.81-14-8.25a5.58 5.58 0 0 1-.29-4.66c.46-1.48 1.25-2.68 2.86-2.88s2.38.81 3.23 2c2.55 3.62 6 5.46 10.38 4.92 2.23-.27 3.05-2.57 4.3-4.08 1.12-1.34 2-2.58 3.84-1.9s2 2.52 1.93 4.27c-.17 3.15-2.56 4.94-4.3 7.08-2 2.5-4.58 3.94-8 3.52m-12-31.77c2.12.06 3.53 1.79 3.48 4.27S19 25.75 17 25.71a3.72 3.72 0 0 1-3.48-4.05c.13-2.73 1.7-4.57 3.87-4.52m25.52 4.21c0 2.5-1.27 4.31-3.07 4.36s-3.06-1.61-3-3.8c0-2.76 1.38-4.81 3.22-4.77s2.9 1.67 2.9 4.21"></path></g></svg>
+      </a>
+      <img class="bg" src="img/pinksplat.png" alt="">
+      <div class="popup">
+        <p style="font-size: 12px">  this set of teas was born when Sounds Cafe asked Moodflower to design 9 original medicinal blends for their concept cafe counter in Park Slope, NY. </p>
+      </div>
+    </div>
     </div>
   </div>
 
@@ -106,11 +138,11 @@
 
 
 
-  <script src="../js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="../js/plugins.js"></script>
-  <script src="../js/main.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -296,6 +296,57 @@ ul {
   content: '>';
 }
 
+.tea-container {
+  width: 300px;
+  background-color: transparent;
+  float: left;
+  margin: 0 0 100px 100px;
+}
+.tea-container .image-container {
+  position: relative;
+  overflow: hidden;
+}
+.tea-container img {
+  width: 300px;
+  height: 344px;
+  display: block;
+  transition: opacity .3s;
+}
+.tea-container .crossfade:hover {
+  opacity: 0;
+}
+.tea-container .crossfade + img {
+  height: auto;
+  opacity: 0;
+  top: 0;
+  position: absolute;
+  z-index: -1;
+}
+.tea-container .crossfade:hover + img {
+  opacity: 1;
+}
+
+
+.tea-container .tea-info {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tea-container .buy-button {
+  display: block;
+  background-color: #14b739;
+  text-align: center;
+  border-radius: 2px;
+  color: #fff;
+  padding: 5px 10px;
+  outline: 1px solid #ff2fa7;
+}
+.tea-container .buy-button:hover {
+  opacity: .9;
+}
+
 
 /* Grid */
 .grid-container {
