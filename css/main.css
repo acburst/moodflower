@@ -310,7 +310,7 @@ ul {
   padding: 20px;
 }
 .collab .popup.vertical::after {
-  content: '⌃';
+  content: '˅';
   left: calc(50% - 15px);
   top: auto;
   bottom: 0;
