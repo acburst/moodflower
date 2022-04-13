@@ -613,6 +613,13 @@ ul {
    Modify as content requires.
    ========================================================================== */
 
+/*Tea container only*/
+@media only screen and (max-width: 300px) {
+  .tea-container {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .show-on-mobile {
     display: block;
@@ -701,7 +708,7 @@ ul {
     color: #fff;
     margin-left: 20px;
     width: auto;
-    max-width: 60%;
+    max-width: 75%;
     align-items: center;
     top: 50%;
     transform: translateY(-50%);
