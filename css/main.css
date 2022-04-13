@@ -218,7 +218,11 @@ h2 {
   position: relative;
   display: flex;
   height: 100vh;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
+}
+
+.right-content {
+  margin: 0 10% 0 0;
 }
 
 .bg {
@@ -228,6 +232,9 @@ h2 {
   z-index: -1;
 }
 
+.show-on-mobile {
+  display: none;
+}
 
 /* Sidebar */
 .sidebar {
@@ -324,7 +331,7 @@ ul {
   width: 300px;
   background-color: transparent;
   float: left;
-  margin: 0 0 100px 100px;
+  margin: 0 50px 100px;
 }
 .tea-container .image-container {
   position: relative;
@@ -557,6 +564,7 @@ ul {
 }
 
 .mobile-menu-btn {
+  color: #fff;
   display: none;
 }
 .nav-wrapper {
@@ -606,9 +614,17 @@ ul {
    ========================================================================== */
 
 @media only screen and (max-width: 600px) {
+  .show-on-mobile {
+    display: block;
+  }
+
   /* Style adjustments for viewports that meet the condition */
   .page-body .content {
     padding-bottom: 140px;
+  }
+
+  .right-content {
+    margin: 0 20px;
   }
 
   .content {
@@ -618,7 +634,6 @@ ul {
   }
   .content .mobile-menu-btn {
     display: flex;
-    color: #000;
     float: right;
     margin-right: 20px;
     height: 50px;
@@ -641,7 +656,7 @@ ul {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: #E5CA01;
+    background-color: #fff;
     z-index: -1;
   }
   .content .nav-wrapper li > a {
@@ -652,6 +667,11 @@ ul {
   }
   .content .right-container {
     min-height: calc(100vh - 90px)
+  }
+
+  .tea-container {
+    margin: 0 auto;
+    float: none;
   }
 
   .grid-container {
@@ -665,10 +685,11 @@ ul {
 
   .sidebar {
     display: block;
-    background-color: #E5CA01;
+    /*background-color: #E5CA01;*/
     padding: 20px 0;
     height: 50px;
     max-width: initial;
+    width: auto;
     position: absolute;
     top: 0;
     left: 0;
@@ -677,21 +698,21 @@ ul {
   }
   .sidebar .logo {
     position: absolute;
-    color: #ff00ea;
+    color: #fff;
     margin-left: 20px;
     width: auto;
     max-width: 60%;
     align-items: center;
     top: 50%;
     transform: translateY(-50%);
-    padding-bottom: 80px;
   }
   .sidebar .logo img {
     width: auto;
     display: inline-block;
+    padding-bottom: 0;
   }
   .sidebar a {
-    color: #444;
+    color: #000;
   }
 
   .logo {
@@ -707,8 +728,8 @@ ul {
   }
 
   .collab {
-    left: 50%;
-    transform: translateX(-50%);
+    /*left: 50%;
+    transform: translateX(-50%);*/
   }
 
   .hide-on-mobile {
